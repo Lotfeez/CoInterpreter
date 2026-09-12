@@ -32,6 +32,7 @@ import com.cointerpreter.app.R
 import com.cointerpreter.app.model.TranscriptEntry
 import com.cointerpreter.app.state.SessionState
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun SessionScreen(
     viewModel: SessionViewModel,
