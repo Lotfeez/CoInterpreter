@@ -288,5 +288,5 @@ class SessionViewModel(
 
 /** Small helper: collects the first emission of a Flow without pulling in a full DI/repository test double. */
 private suspend fun <T> kotlinx.coroutines.flow.Flow<T>.collectIndexedOnce(action: (T) -> Unit) {
-    kotlinx.coroutines.flow.first(this).let(action)
+    first().let(action)
 }
