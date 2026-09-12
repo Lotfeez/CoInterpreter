@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.cointerpreter.app.BuildConfig
 import com.cointerpreter.app.R
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun AboutScreen(onBack: () -> Unit, onNavigatePrivacy: () -> Unit) {
     Scaffold(
