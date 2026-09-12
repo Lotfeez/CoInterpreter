@@ -19,6 +19,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.cointerpreter.app.R
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 fun PrivacyScreen(onBack: () -> Unit) {
     Scaffold(
@@ -45,6 +46,7 @@ fun PrivacyScreen(onBack: () -> Unit) {
     }
 }
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 private fun Section(title: String, body: String) {
     Text(title, style = MaterialTheme.typography.titleMedium)
